@@ -43,3 +43,27 @@ console.log('Proje açıldı!')
 
 
 /* Kodlar Buradan aşağıya */
+const baslikListe = document.querySelectorAll("nav a");
+console.log("Basliktaki linklerin listesi", baslikListe);
+
+/* Menü Çözüm 1 */
+/* baslikListe[0].textContent = siteContent.nav["nav-item-1"];
+baslikListe[1].textContent = siteContent.nav["nav-item-2"];
+baslikListe[2].textContent = siteContent.nav["nav-item-3"];
+baslikListe[3].textContent = siteContent.nav["nav-item-4"];
+baslikListe[4].textContent = siteContent.nav["nav-item-5"];
+baslikListe[5].textContent = siteContent.nav["nav-item-6"]; */
+
+/* Menü Çözüm 2 */
+/* for(let i = 0; i < baslikListe.length; i++) {
+  baslikListe[i].textContent = siteContent.nav[`nav-item-${index + 1}`];
+} */
+
+/* Menü Çözüm 3 */
+/* [...baslikListe].map((element, index) => {
+  baslikListe[index].textContent = siteContent.nav[`nav-item-${index + 1}`]
+
+  console.log(element.textContent)
+});
+
+console.log("Mapli Menü", navArray); */
